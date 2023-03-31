@@ -2,6 +2,12 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import LoginView from '../views/login.vue'
+import Books from '../views/Books.vue'
+import Authors from '../views/Authors.vue'
+import Members from '../views/Members.vue'
+import Staff from '../views/Staff.vue'
+import Issues from '../views/Issues.vue'
+import BookEdit from '../views/BookEdit.vue'
 
 Vue.use(VueRouter)
 
@@ -10,6 +16,36 @@ const routes = [
     path: '/',
     name: 'login',
     component: LoginView
+  },
+  {
+    path: '/books',
+    name: 'books',
+    component: Books
+  },
+  {
+    path: '/authors',
+    name: 'authors',
+    component: Authors
+  },
+  {
+    path: '/members',
+    name: 'members',
+    component: Members
+  },
+  {
+    path: '/staff',
+    name: 'staff',
+    component: Staff
+  },
+  {
+    path: '/issues',
+    name: 'issues',
+    component: Issues
+  },
+  {
+    path: '/books/:id',
+    name: 'bookEdit',
+    component: BookEdit
   },
   // {
   //   path: '/about',
